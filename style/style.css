@@ -1,32 +1,74 @@
 body {
     width: 1366px;
+    height: 100%;
     color: white;
+}
+
+.beam {
+    height: 90px;
+    margin-top: -3px;
+    margin-left: -3px;
+    width: 1371px;
+    color: #00000066;
+    border: 2px solid #FFFFFF33;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+}
+
+.beam-image {
+    width: 31px;
+    height: 33px;
+    line-height: 47px;
+    align-self: center;
+    margin-left: 141px;
+}
+
+.beam-logo {
+    margin: 20px 0 23px 0;
+    text-align: left;
+    font: normal normal 800 35px/47px Nunito Sans;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 1;
+    position: relative;
+    left: 10px;
+}
+
+.beam-logo > span {
+    color: #FF0000;
+}
+
+
+.beam-nav {
 
 }
 
-/*.beam {*/
-/*    height: 93px;*/
-/*    color: #00000066;*/
-/*    border: 2px solid #FFFFFF33;*/
-/*    !*margin-top: -3px;*!*/
-/*    !*margin-left: -3px;*!*/
-/*    width: 1371px;*/
-/*}*/
+.beam-nav__menu {
+    list-style: none;
+    font: normal normal bold 16px/22px Nunito Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 33px 0;
+}
 
-/*.banner-container{*/
-/*    width: 1046px;*/
-/*    height: 297px;*/
-/*    !*display: flex;*!*/
-/*    !*flex-direction: column;*!*/
-/*    !*justify-content: center;*!*/
-/*    !*align-items: center;*!*/
+.beam-nav__menu__item {
+    display: inline-block;
+    justify-content: flex-end;
 
-/*}*/
+}
+
+.banner-container {
+    z-index: 2;
+}
 
 .banner {
     margin-top: 0px;
     margin-left: 0px;
-    width: 1366px;
+    /*width: 1366px;*/
     height: 807px;
     background-image: url(../images/Image.png);
     background-size: cover;
@@ -36,8 +78,18 @@ body {
     flex-direction: column;
     /*justify-content: center;*/
     /*align-items: center;*/
+
 }
 
+.banner::before {
+    content: "";
+    width: 1366px;
+    height: 807px;
+    position: absolute;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 0.3;
+    z-index: 1;
+}
 
 .banner-title {
     color: #FFFFFF;
@@ -72,7 +124,7 @@ body {
     height: 297px;
 }
 
-.banner-btn1, .banner-btn2{
+.banner-btn1, .banner-btn2 {
     padding: 22px 55px;
     text-transform: uppercase;
     text-decoration: none;
@@ -87,11 +139,81 @@ body {
     margin-left: 451px;
     background-color: #FF0000;
     color: #FFFFFF;
-    position: relative; left: -12.5px
+    position: relative;
+    left: -12.5px
 }
 
 .banner-btn2 {
     background-color: #FFFFFF;
     color: #FF0000;
-    position: relative; left: 12.5px;
+    position: relative;
+    left: 12.5px;
 }
+
+.section-container { /* Będę go używać później też do kolejnych sekcji strony*/
+    width: 1088px;
+    height: 516px;
+    margin-left: 139px;
+    margin-right: 139px;
+
+
+}
+
+.article-container {
+    display: flex;
+}
+
+.section-name {
+    text-transform: uppercase;
+    text-align: center;
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+
+}
+
+.car-blog {
+
+    /*    przestrzeń pomiędzy artykułami do ustalenia*/
+
+
+}
+
+.car-blog__icon {
+    width: 352px;
+    height: 234px;
+}
+
+.car-blog__title {
+    text-transform: uppercase;
+    text-align: left;
+    font: normal normal normal 19px/26px Nunito Sans;
+    letter-spacing: 0px;
+    color: #6A6A6A;
+    opacity: 1;
+}
+
+.car-blog__description {
+    text-align: left;
+    font: normal normal 300 14px/19px Open Sans;
+    letter-spacing: 0px;
+    color: #6A6A6A;
+    opacity: 1;
+}
+
+.car-blog__button {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 11px 29px 10px 29px;
+    border: none;
+    border-radius: 40px;
+    background: #FF0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+}
+
