@@ -40,7 +40,6 @@ body {
     color: #FF0000;
 }
 
-
 .beam-nav {
 
 }
@@ -275,7 +274,6 @@ body {
     box-shadow: 0 3px 6px #FF00004D;
 }
 
-
 .service-section-container {
     width: 1366px;
     height: 643px;
@@ -300,9 +298,9 @@ body {
 
 .service-offer__icon {
     width: 170px;
-    height:170px;
+    height: 170px;
     border: none;
-    border-radius:50%;
+    border-radius: 50%;
     margin: 0 31px 15px 30px;
 
 }
@@ -346,4 +344,176 @@ body {
     box-shadow: 0 3px 6px #FF00004D;
     margin-left: 44px;
     margin-right: 45px;
+}
+
+
+.contact {
+    width: 1366px;
+    height: 619px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    opacity: 1;
+}
+
+.contact-section-name {
+    text-transform: uppercase;
+    text-align: center;
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    margin-top: 65px;
+    margin-bottom: 35px;
+
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 231px;
+    margin-right: 231px;
+}
+
+.contact-image {
+    width: 444px;
+    height: 316.5px;
+    align-items: flex-start;
+    position: relative;
+    left: -8px;
+
+
+}
+
+.contact-form {
+    width: 444px;
+    position: relative;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+input[type="text"] {
+    width: 444px;
+    height: 38px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+    opacity: 1;
+    margin-bottom: 20px;
+    text-align: left;
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: 0;
+    color: #B2B2B2;
+    /*Pozostało odsunięcie tekstu wewnątrz*/
+}
+
+input[type="email"] {
+    width: 444px;
+    height: 38px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    opacity: 1;
+    margin-bottom: 20px;
+    text-align: left;
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: 0;
+    color: #B2B2B2;
+    /*Pozostało odsunięcie tekstu wewnątrz*/
+
+}
+
+textarea {
+    width: 444px;
+    height: 140px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    opacity: 1;
+    text-align: left;
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: 0;
+    color: #B2B2B2;
+    /*Pozostało odsunięcie tekstu wewnątrz*/
+}
+
+
+.checkbox {
+    width: 412px;
+    height: 71px;
+    text-align: left;
+    font: normal normal 300 10px/14px Open Sans;
+    letter-spacing: 0;
+    color: #B2B2B2;
+    opacity: 1;
+}
+
+footer {
+    width: 1366px;
+    height: 232px;
+    background: #28272C 0 0 no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+}
+
+.footer-image {
+    width: 16px;
+    height: 19px;
+    line-height: 47px;
+    align-self: center;
+    margin-left: 140px;
+    margin-top: 40px;
+}
+
+.footer-logo {
+    text-align: left;
+    font: normal normal bold 25px/34px Nunito Sans;
+    letter-spacing: 0;
+    color: #FF0000;
+    opacity: 1;
+    margin-top: 40px;
+    margin-left: 164px;
+}
+
+.footer-logo > span {
+    color: #FFFFFF;
+}
+
+.footer-nav-container {
+    width: 1088px;
+    height: 97px;
+    margin: 96px 139px 39px 139px;
+    display: flex;
+    list-style: none;
+}
+
+.footer-nav-column1 {
+    margin-left: 139px;
+
+}
+
+.footer-nav-column2 {
+    margin-left: 141px;
+
+}
+
+.footer-nav__item {
+    text-transform: uppercase;
+    text-align: left;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.footer-nav__item:first-of-type {
+    color: #FF0000;
+}
+
+.copyright {
+    justify-content: flex-end;
+    margin-right: 139px;
+    margin-bottom: 40px;
+
 }
