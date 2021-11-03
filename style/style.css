@@ -28,7 +28,7 @@ body {
     margin: 20px 0 23px 0;
     text-align: left;
     font: normal normal 800 35px/47px Nunito Sans;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     text-transform: uppercase;
     color: #FFFFFF;
     opacity: 1;
@@ -48,7 +48,7 @@ body {
 .beam-nav__menu {
     list-style: none;
     font: normal normal bold 16px/22px Nunito Sans;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #FFFFFF;
     text-transform: uppercase;
     opacity: 1;
@@ -63,11 +63,12 @@ body {
 
 .banner-container {
     z-index: 2;
+    height: 100%;
 }
 
 .banner {
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: 0;
+    margin-left: 0;
     /*width: 1366px;*/
     height: 807px;
     background-image: url(../images/Image.png);
@@ -86,7 +87,7 @@ body {
     width: 1366px;
     height: 807px;
     position: absolute;
-    background: #000000 0% 0% no-repeat padding-box;
+    background: #000000 0 0 no-repeat padding-box;
     opacity: 0.3;
     z-index: 1;
 }
@@ -94,7 +95,7 @@ body {
 .banner-title {
     color: #FFFFFF;
     text-transform: uppercase;
-    text-shadow: 0px 3px 6px #00000040;
+    text-shadow: 0 3px 6px #00000040;
     margin-top: 254px;
     margin-left: 363px;
     padding: 13.5px 0;
@@ -113,15 +114,15 @@ body {
     margin-bottom: 54px;
     text-align: center;
     font: normal normal bold 16px/22px Nunito Sans;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
-
 }
 
 .banner-buttons {
     width: 1046px;
     height: 297px;
+
 }
 
 .banner-btn1, .banner-btn2 {
@@ -130,7 +131,7 @@ body {
     text-decoration: none;
     text-align: center;
     font: normal normal bold 16px/22px Nunito Sans;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     border-radius: 40px;
     opacity: 1;
 }
@@ -150,7 +151,30 @@ body {
     left: 12.5px;
 }
 
-.section-container { /* Będę go używać później też do kolejnych sekcji strony*/
+.banner-arrow {
+    height: 55px;
+    width: 55px;
+    border: none;
+    background: #FF0000 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #FF00004D;
+    border-radius: 50%;
+    opacity: 1;
+    position: relative;
+    left: 656px;
+    z-index: 3;
+}
+
+.banner-arrow::before {
+    content: " ";
+    height: 22px;
+    width: 21px;
+    margin: 17px;
+    position: absolute;
+    background-image: url(../images/IconArrowDown.svg);
+    background-size: cover;
+}
+
+.articles-section-container { /* Będę go używać później też do kolejnych sekcji strony*/
     width: 1088px;
     height: 516px;
     margin-left: 139px;
@@ -159,19 +183,47 @@ body {
 
 }
 
-.article-container {
+.article-container, .services-container {
     display: flex;
+    justify-content: space-between;
+
+
 }
 
-.section-name {
+.articles-section-name {
     text-transform: uppercase;
     text-align: center;
     font: normal normal bold 35px/47px Nunito Sans;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #000000;
     opacity: 1;
+    margin-top: 91px;
+    margin-bottom: 35px;
 
 }
+
+/*.section-name::before{*/
+/*    content: " ";*/
+/*    width: 50px;*/
+/*    height: 3px;*/
+/*    position: absolute;*/
+/*    left: 60px;*/
+/*    background: #FF0000 0% 0% no-repeat padding-box;*/
+/*    box-shadow: 0px 1px 6px #FF00004D;*/
+/*    border-radius: 8px;*/
+/*    opacity: 1;*/
+/*}*/
+
+/*.section-name::after{*/
+/*    content: " ";*/
+/*    width: 50px;*/
+/*    height: 3px;*/
+/*    position: absolute;*/
+/*    background: #FF0000 0% 0% no-repeat padding-box;*/
+/*    box-shadow: 0px 1px 6px #FF00004D;*/
+/*    border-radius: 8px;*/
+/*    opacity: 1;*/
+/*}*/
 
 .car-blog {
 
@@ -183,37 +235,115 @@ body {
 .car-blog__icon {
     width: 352px;
     height: 234px;
+    margin-bottom: 25px;
 }
 
 .car-blog__title {
     text-transform: uppercase;
     text-align: left;
     font: normal normal normal 19px/26px Nunito Sans;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #6A6A6A;
     opacity: 1;
+    margin-bottom: 15px;
+
 }
 
 .car-blog__description {
+    width: 260px;
+    height: 79px;
     text-align: left;
     font: normal normal 300 14px/19px Open Sans;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #6A6A6A;
     opacity: 1;
+    margin-bottom: 15px;
 }
 
-.car-blog__button {
+.article__button {
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     font: normal normal bold 14px/19px Nunito Sans;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
     padding: 11px 29px 10px 29px;
     border: none;
     border-radius: 40px;
-    background: #FF0000 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #FF00004D;
+    background: #FF0000 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #FF00004D;
 }
 
+
+.service-section-container {
+    width: 1366px;
+    height: 643px;
+    padding-left: 154px;
+    padding-right: 153px;
+    padding-bottom: 100px;
+    background: #28272C 0 0 no-repeat padding-box;
+    opacity: 1;
+}
+
+.services-section-name {
+    text-transform: uppercase;
+    text-align: center;
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    padding-top: 60px;
+}
+
+.service-offer__icon {
+    width: 170px;
+    height:170px;
+    border: none;
+    border-radius:50%;
+    margin: 0 31px 15px 30px;
+
+}
+
+.service-offer__title {
+    text-transform: uppercase;
+    text-align: left;
+    font: normal normal normal 19px/26px Nunito Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-bottom: 15px;
+
+}
+
+.service-offer__description {
+    width: 231px;
+    height: 80px;
+    text-align: center;
+    font: normal normal normal 14px/19px Open Sans;
+    letter-spacing: 0;
+    color: #B2B2B2;
+    opacity: 1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.services__button {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 11px 29px 10px 29px;
+    border: none;
+    border-radius: 40px;
+    background: #FF0000 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #FF00004D;
+    margin-left: 44px;
+    margin-right: 45px;
+}
