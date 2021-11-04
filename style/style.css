@@ -13,6 +13,7 @@ body {
     border: 2px solid #FFFFFF33;
     position: absolute;
     display: flex;
+    justify-content: space-between;
     z-index: 2;
 }
 
@@ -30,18 +31,20 @@ body {
     font: normal normal 800 35px/47px Nunito Sans;
     letter-spacing: 0;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FF0000;
     opacity: 1;
     position: relative;
-    left: 10px;
+    left: -144px;
 }
 
 .beam-logo > span {
-    color: #FF0000;
+    color: #FFFFFF;
 }
 
 .beam-nav {
-
+    width: 486px;
+    height: 88px;
+    margin-right: 165px;
 }
 
 .beam-nav__menu {
@@ -52,13 +55,37 @@ body {
     text-transform: uppercase;
     opacity: 1;
     padding: 33px 0;
-}
-
-.beam-nav__menu__item {
-    display: inline-block;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-between;
 
 }
+
+.beam-nav__menu__item:hover {
+    background: #FFFFFF33 0 0 no-repeat padding-box;
+    opacity: 1;
+}
+
+.beam-nav .beam-nav__menu__item:nth-child(1) {
+    margin-left: 40px;
+    margin-right: 41.5px;
+}
+
+.beam-nav .beam-nav__menu__item:nth-child(2) {
+    margin-left: 41.5px;
+    margin-right: 36.5px;
+}
+
+.beam-nav .beam-nav__menu__item:nth-child(3) {
+
+    margin-left: 36.5px;
+    margin-right: 28.5px;
+}
+
+.beam-nav .beam-nav__menu__item:nth-child(4) {
+    margin-left: 28.5px;
+    margin-right: 0;
+}
+
 
 .banner-container {
     z-index: 2;
@@ -68,7 +95,6 @@ body {
 .banner {
     margin-top: 0;
     margin-left: 0;
-    /*width: 1366px;*/
     height: 807px;
     background-image: url(../images/Image.png);
     background-size: cover;
@@ -76,9 +102,6 @@ body {
     background-position: center;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-
 }
 
 .banner::before {
@@ -201,7 +224,7 @@ body {
 
 }
 
-/*.section-name::before{*/
+/*articles.section-name::before{*/
 /*    content: " ";*/
 /*    width: 50px;*/
 /*    height: 3px;*/
@@ -213,7 +236,7 @@ body {
 /*    opacity: 1;*/
 /*}*/
 
-/*.section-name::after{*/
+/*articles.section-name::after{*/
 /*    content: " ";*/
 /*    width: 50px;*/
 /*    height: 3px;*/
@@ -346,7 +369,6 @@ body {
     margin-right: 45px;
 }
 
-
 .contact {
     width: 1366px;
     height: 619px;
@@ -371,6 +393,8 @@ body {
     justify-content: center;
     margin-left: 231px;
     margin-right: 231px;
+    margin-bottom: 0;
+
 }
 
 .contact-image {
@@ -438,6 +462,10 @@ textarea {
     /*Pozostało odsunięcie tekstu wewnątrz*/
 }
 
+input::placeholder, textarea::placeholder {
+    padding-left: 12px;
+    padding-top: 8px;
+}
 
 .checkbox {
     width: 412px;
@@ -447,6 +475,75 @@ textarea {
     letter-spacing: 0;
     color: #B2B2B2;
     opacity: 1;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    position: relative;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+/*.checkbox:checked {*/
+/*    background: tomato;*/
+/*}*/
+
+/*.checkbox:checked::after {*/
+/*    content: "";*/
+/*    width: 11px;*/
+/*    height: 11px;*/
+/*    border-radius: 50%;*/
+/*    background: #fff;*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+.actions{
+    align-self: end;
+    margin-top: 20px;
+    margin-bottom: 65px;
+
+}
+
+input[type="submit"] {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    opacity: 1;
+    width: 142px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0;
+    color: #FF0000;
+    text-transform: uppercase;
+
+
+
+
+}
+
+input[type="submit"]:hover {
+
+}
+
+input[type="submit"]:active {
+
 }
 
 footer {
@@ -517,3 +614,4 @@ footer {
     margin-bottom: 40px;
 
 }
+
