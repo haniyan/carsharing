@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<div class="container-page">
 <header>
     <section class="bar">
         <img class="bar-image" src="images/Icon.svg" alt="share symbol">
@@ -42,8 +44,6 @@
             <div class="banner-buttons">
                 <a class="banner-btn1" href=#>Share a car</a>
                 <a class="banner-btn2" href=#>Key features</a>
-            </div>
-            <div class="banner-arrow">
             </div>
         </section>
     </section>
@@ -135,15 +135,20 @@
             <input type="email" id="Email" name="email" placeholder="Type your e-mail"/>
             <label for="Message"></label>
             <textarea id="Message" name="Message" placeholder="Type your message"></textarea>
-            <label class="checkbox">
-                <input type="checkbox" id="Agreement" name="Agreement" value="1">I hereby give consent for my personal
-                data
-                included in my application to be processed for the purposes of the recruitment process under the
-                European
-                Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27
-                April 2016, with regard to the processing of personal data and on the free movement of such data, and
-                repealing Directive 95/46/EC (Data Protection Directive)</label>
 
+            <label class="form__checkbox">
+                <input type="checkbox" id="Agreement" name="Agreement" value="1"/>
+                <span class="checkbox"></span>
+                <p class="consent__text">
+                    I hereby give consent for my personal data included in my application to be processed for the
+                    purposes of the recruitment process under the
+                    European Parliament’s and Council of the European Union Regulation on the Protection of Natural
+                    Persons as of 27
+                    April 2016, with regard to the processing of personal data and on the free movement of such data,
+                    and
+                    repealing Directive 95/46/EC (Data Protection Directive)
+                </p>
+            </label>
             <div class="actions">
                 <input type="submit" value="Send"/>
             </div>
@@ -174,6 +179,10 @@
     </div>
 
 </footer>
+
+<div class="bounce-1" id="fancy-circle"></div>
+</div>
+
 </body>
 </html>
 
