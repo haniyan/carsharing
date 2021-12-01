@@ -60,7 +60,6 @@ body {
     width: 486px;
     height: 88px;
     margin-right: 165px;
-    padding-top: 33px;
 }
 
 .bar-nav__menu {
@@ -73,15 +72,20 @@ body {
     text-decoration: none;
     font: normal normal bold 16px/22px Nunito Sans;
     letter-spacing: 0;
-    color: #FFFFFF;
+    color: var(--color-white);
     text-transform: uppercase;
     opacity: 1;
 }
 
-/*padding problem in hover*/
+.bar-nav__menu li {
+    height: 88px;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .bar-nav__menu li:hover {
-    height: 88px;
     background: #FFFFFF33 0 0 no-repeat padding-box;
     opacity: 1;
 }
@@ -474,8 +478,6 @@ body {
     align-items: flex-start;
     position: relative;
     left: -8px;
-
-
 }
 
 .contact-form {
