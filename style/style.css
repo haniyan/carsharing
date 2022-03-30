@@ -206,7 +206,7 @@ display: flex;
     color: var(--color-white);
 }
 
-.articles-section-container { /* Będę go używać później też do kolejnych sekcji strony*/
+.articles-section-container {
     width: 1088px;
     height: 516px;
     margin-left: 139px;
